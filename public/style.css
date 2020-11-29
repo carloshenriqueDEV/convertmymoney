@@ -55,10 +55,3 @@ li{
   width: 10%;
   color: #0a0a0a;
 }
-
-li:hover{
-  border: solid 1px  #6575bb;
-  background-color: #02287a;;
-  width: 12%;
-  color: #dbdbdb;
-}

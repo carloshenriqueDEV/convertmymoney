@@ -9,15 +9,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/cotacao', (req, res) => {
   const { cotacao, quantidade } = req.query;
-  if (cotacao === "" || quantidade === "") {
+  if (cotacao == "" || quantidade == "") {
     res.render('erro');
+  } else {
+    const conversao = convert.toMoney(convert.convert(cotacao, quantidade));
+    res.render('cotacao', {
+      cotacao: convert.toMoney(cotacao),
+      quantidade,
+      conversao
+    })
   }
-  const conversao = convert.toMoney(convert.convert(cotacao, quantidade));
-  res.render('cotacao', {
-    cotacao: convert.toMoney(cotacao),
-    quantidade,
-    conversao
-  })
 })
 app.get('/', (req, res) => {
   res.render('home');
