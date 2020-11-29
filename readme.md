@@ -9,7 +9,7 @@ Site desensolvido com a stack JavaScript e servido pelo vercel.
  - Jest para o desenvolvimento de testes unitários.
  - css para apresentação das telas.
 
- Visualize o site em: https://convertmymoney-r7duvsb0t.vercel.app/
+ Visualize o site em: convertmymoney-ntnx28z6n.vercel.app
 
 
  ## Estrutura de pastas:
